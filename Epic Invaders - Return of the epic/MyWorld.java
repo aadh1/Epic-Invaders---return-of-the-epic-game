@@ -24,6 +24,10 @@ public class MyWorld extends World
     {
         return counter;
     }
+    public Healthbar gethealthbar()
+    {
+        return healthbar;
+    }
     public void act()
     {
         addKash();
@@ -51,6 +55,7 @@ public class MyWorld extends World
     private void prepare()
     {
         addObject(counter, 100, 50);
+        addObject (healthbar, 250, 50);
         Player player = new Player();
         addObject(player,252,510);
         player.setLocation(270,491);

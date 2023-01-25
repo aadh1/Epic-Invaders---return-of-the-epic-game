@@ -35,6 +35,10 @@ public class Kash extends Zorg
         }
         else if (getY()==599)
         {
+            World world = getWorld();
+            MyWorld myWorld = (MyWorld)world;
+            Healthbar healthbar = myWorld.getHealthbar();
+            healthbar.loseHealth();
             getWorld(). removeObject(this);
         }
     }
